@@ -9,7 +9,7 @@ void Server::initCmd() {
     this->exCmd["PRIVMSG"] = new executePrivmsg();
     this->exCmd["JOIN"] = new executeJoin();
     this->exCmd["KICK"] = new executeKick();
-    this->exCmd["INVITE"] = new executeKick();
+    this->exCmd["INVITE"] = new executeInvite();
 }
 std::map<int, Client> & Server::get_mapClient(){
     return this->_clients ;
